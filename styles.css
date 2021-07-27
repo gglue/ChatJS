@@ -1,0 +1,9 @@
+body{
+    background: #352f5b;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+    color:white
+  }
+input{
+    max-width: 100%;
+}

@@ -1,0 +1,59 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+        <title>ChatJS</title>
+    </head>
+    <body>
+        <div class = "container">
+            <!--Big Title-->
+            <div class="row justify-content-center">
+                <div class=" text-center col my-3">
+                    <h1>ChatJS</h1> 
+                </div>
+            </div>
+
+            <!--Chatroom selection-->
+            <div class ="row justify-content-center">
+                <div class="chat-room col text-center my-5">
+                    <h2>Choose A Channel:</h2>
+                    <button class = "btn btn-light" id = "general">General</button>
+                    <button class = "btn btn-light" id = "gaming">Gaming</button>
+                    <button class = "btn btn-light" id = "anime">Anime</button>
+                    <button class = "btn btn-light" id = "politics">Politics</button>
+                </div>
+            </div>
+
+            <!--Chat Messages-->
+            <div class = "row justify-content-center chat-messages">
+                <ul class = "chat-list list-group"></ul>
+            </div>
+
+            <!--Type new message-->
+            <div class = "row justify-content-center">
+                <form class = "new-message col-8">
+                    <div class="input-group">
+                        <input type = "text" class = "form-control" id="enter-message" placeholder="Message goes here." aria-describedby="enter-button">
+                        <div class="input-group-append">
+                            <input type ="submit" class="btn btn-light" value="Send">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!--Change Username-->
+            <div class = "row justify-content-center">
+                <form class = "col-8 input-group change-name">
+                    <div class="input-group-prepend">
+                        <span class ="input-group-text" id="change-user">Change name:</span>
+                    </div>
+                    <input type = "text" class = "form-control" id="enter-message" placeholder="New name here." aria-describedby="change-user">
+                </name>
+            </div>
+
+        </div>
+    </body>
+</html>
