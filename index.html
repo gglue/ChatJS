@@ -56,4 +56,22 @@
 
         </div>
     </body>
+
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyD-eUXbyHzvuY57I4ILey49FUzoNO0boWg",
+    authDomain: "chatroom-a05fa.firebaseapp.com",
+    projectId: "chatroom-a05fa",
+    storageBucket: "chatroom-a05fa.appspot.com",
+    messagingSenderId: "598852499517",
+    appId: "1:598852499517:web:27dae76f0335b5e90a5254",
+    measurementId: "G-0VJQB044V5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  const database = firebase.firestore();
+</script>
+
 </html>
