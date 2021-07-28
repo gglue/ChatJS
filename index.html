@@ -18,7 +18,7 @@
 
             <!--Chatroom selection-->
             <div class ="row justify-content-center">
-                <div class="chat-room col text-center my-3">
+                <div class="channels col text-center my-3">
                     <h2>Choose A Channel:</h2>
                     <button class = "btn btn-light" id = "general">General</button>
                     <button class = "btn btn-light" id = "gaming">Gaming</button>
@@ -29,14 +29,14 @@
 
             <!--Chat Messages-->
             <div class = "row justify-content-center chat-messages" style ="color: black">
-                <ul class = "chat-list list-group my-3 col-7"></ul>
+                <ul class = "chat-list overflow-auto list-group my-3 col-7"></ul>
             </div>
 
             <!--Type new message-->
             <div class = "row justify-content-center">
                 <form class = "new-message col-8">
                     <div class="input-group">
-                        <input type = "text" class = "form-control" id="enter-message" placeholder="Message goes here." aria-describedby="enter-button">
+                        <input type = "text" class = "form-control" id="message" placeholder="Message goes here." aria-describedby="enter-button">
                         <div class="input-group-append">
                             <input type ="submit" class="btn btn-light" value="Send">
                         </div>
@@ -50,14 +50,17 @@
                     <div class="input-group-prepend">
                         <span class ="input-group-text" id="change-user">Change name:</span>
                     </div>
-                    <input type = "text" class = "form-control" id="enter-message" placeholder="New name here." aria-describedby="change-user">
+                    <input type = "text" class = "form-control" id="newName" placeholder="New name here." aria-describedby="change-user">
                 </name>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class=" text-center col my-8 name-change"></div>
             </div>
 
         </div>
     </body>
 
-    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
     <script>
@@ -74,6 +77,7 @@
     firebase.initializeApp(firebaseConfig);
     const database = firebase.firestore();
     </script>
+    <script src ="scripts/date_fns.min.js"></script>
     <script src ="scripts/ChatRoom.js"></script>
     <script src ="scripts/ChatRoomUI.js"></script>
     <script src ="scripts/app.js"></script>

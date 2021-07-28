@@ -12,3 +12,11 @@ input{
   font-size:0.8em;
   color: gray;
 }
+
+/* This helps have a scroll-bar and makes the chatlog start at newest */
+.list-group{
+  max-height: 300px;
+  overflow:scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}

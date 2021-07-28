@@ -17,7 +17,10 @@ class ChatRoomUI{
                 <div class = "sentAt">${time}</span>
             </li>
             `;
-        this.logs.innerHTML += html;
+        this.logs.innerHTML = html + this.logs.innerHTML;
+    }
 
+    clear(){
+        this.logs.innerHTML = '';
     }
 }

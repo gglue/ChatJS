@@ -23,9 +23,10 @@ class ChatRoom{
         return response;
     }
 
-    // Changes the name of the user
+    // Changes the name of the user and stores it to browser
     changeName(name){
         this.name = name;
+        localStorage.setItem('name', name);
     }
 
     // Changes the channel
