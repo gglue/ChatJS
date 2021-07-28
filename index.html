@@ -18,7 +18,7 @@
 
             <!--Chatroom selection-->
             <div class ="row justify-content-center">
-                <div class="chat-room col text-center my-5">
+                <div class="chat-room col text-center my-3">
                     <h2>Choose A Channel:</h2>
                     <button class = "btn btn-light" id = "general">General</button>
                     <button class = "btn btn-light" id = "gaming">Gaming</button>
@@ -28,8 +28,8 @@
             </div>
 
             <!--Chat Messages-->
-            <div class = "row justify-content-center chat-messages">
-                <ul class = "chat-list list-group"></ul>
+            <div class = "row justify-content-center chat-messages" style ="color: black">
+                <ul class = "chat-list list-group my-3 col-7"></ul>
             </div>
 
             <!--Type new message-->
@@ -57,22 +57,25 @@
         </div>
     </body>
 
-<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
-<script>
-  var firebaseConfig = {
-    apiKey: "AIzaSyD-eUXbyHzvuY57I4ILey49FUzoNO0boWg",
-    authDomain: "chatroom-a05fa.firebaseapp.com",
-    projectId: "chatroom-a05fa",
-    storageBucket: "chatroom-a05fa.appspot.com",
-    messagingSenderId: "598852499517",
-    appId: "1:598852499517:web:27dae76f0335b5e90a5254",
-    measurementId: "G-0VJQB044V5"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  const database = firebase.firestore();
-</script>
-<script src ="scripts/ChatRoom.js"></script>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-firestore.js"></script>
+    <script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyD-eUXbyHzvuY57I4ILey49FUzoNO0boWg",
+        authDomain: "chatroom-a05fa.firebaseapp.com",
+        projectId: "chatroom-a05fa",
+        storageBucket: "chatroom-a05fa.appspot.com",
+        messagingSenderId: "598852499517",
+        appId: "1:598852499517:web:27dae76f0335b5e90a5254",
+        measurementId: "G-0VJQB044V5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const database = firebase.firestore();
+    </script>
+    <script src ="scripts/ChatRoom.js"></script>
+    <script src ="scripts/ChatRoomUI.js"></script>
+    <script src ="scripts/app.js"></script>
 
 </html>

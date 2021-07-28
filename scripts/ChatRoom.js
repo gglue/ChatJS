@@ -56,9 +56,3 @@ class ChatRoom{
     }
 }
 
-const test = new ChatRoom('general', 'Victor');
-//test.addToChat('I hate HoloLive!').then(()=> console.log("Success!")).catch(err => console.log(err));
-
-test.getChatLogs((data) => {
-    console.log(data);
-});
