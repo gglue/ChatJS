@@ -32,6 +32,7 @@ class ChatRoom{
     // Changes the channel
     changeChannel(room){
         this.room = room;
+        localStorage.setItem('channel', room);
         // Unsub from changes from previous channel
         if (this.unsub){
             this.unsub();
@@ -45,7 +46,7 @@ class ChatRoom{
             // Only get logs for the relevant channel
             .where('room', '==', this.room)
             //ordered by sent-at property
-            .orderBy('sentAt')
+            .orderBy('sentAt').limit(50)
             .onSnapshot(snapshot => {
                 snapshot.docChanges().forEach(change =>{
                     // use callback function to update the UI

@@ -3,8 +3,14 @@ let username = localStorage.name;
 if (!username){
     username = 'Guest';
 }
+
+// Check local storage for chosen channel
+let channel = localStorage.channel;
+if (!channel){
+    channel = 'general';
+}
 // Create ChatRoom instance
-const chatRoom = new ChatRoom('general', username);
+const chatRoom = new ChatRoom(channel, username);
 
 // Get the chat message div
 const chatLogs = document.querySelector('.chat-list');
